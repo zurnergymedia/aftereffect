@@ -54,14 +54,14 @@
 	
 	
 	/* COUNTDOWN TIMER */
-	$('#clock').countdown('2020/09/06 04:35:00') /* change here your "countdown to" date */
+	$('#clock').countdown('2020/09/06 16:40:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">Day(s)</span></span><span class="separator">:</span><span class="counter-number">%H<br><span class="timer-text">Hour(s)</span></span><span class="separator">:</span><span class="counter-number">%M<br><span class="timer-text">Minute(s)</span></span><span class="separator">:</span><span class="counter-number">%S<br><span class="timer-text">Second(s)</span></span>';
 			
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('This offer has expired!')
+	$(this).html('The offer has expired!')
 		.parent().addClass('disabled');
 	});
 	
