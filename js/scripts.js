@@ -54,7 +54,7 @@
 	
 	
 	/* COUNTDOWN TIMER */
-	$('#clock').countdown('2020/11/6 08:05:00') /* change here your "countdown to" date */
+	$('#clock').countdown('2020/11/7 12:00:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">Day(s)</span></span><span class="separator">:</span><span class="counter-number">%H<br><span class="timer-text">Hour(s)</span></span><span class="separator">:</span><span class="counter-number">%M<br><span class="timer-text">Minute(s)</span></span><span class="separator">:</span><span class="counter-number">%S<br><span class="timer-text">Second(s)</span></span>';
 			
